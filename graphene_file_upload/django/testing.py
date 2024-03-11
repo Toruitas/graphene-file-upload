@@ -42,7 +42,7 @@ def file_graphql_query(
     map_ = {}
 
     for key in files.keys():
-        map_[key] = ['variables.{key}'.format(key=key)]
+        map_[key] = [f'variables.{key}']
         if key not in variables:
             variables[key] = None
 
